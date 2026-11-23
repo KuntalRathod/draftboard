@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "skills": {
+    "anatomy-asset": {
+      "source": "Teddarific/skills",
+      "commit": "7e897b2c35b4b6c5a70410d9e4a976efa288d265",
+      "sourceType": "github",
+      "skillPath": "skills/anatomy-asset/SKILL.md",
+      "computedHash": "ba1402f01e522b61cdae3b40266d89995803782c6e6afdadcf39cfdad920592d"
+    },
+    "brag": {
+      "source": "latent-spaces/brag",
+      "sourceType": "github",
+      "skillPath": "skills/brag/SKILL.md",
+      "computedHash": "6eefb4ac1485fd9834ea42c70a789bcc532cb6cf17f9f82925be8cdc681b0d75"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "commit": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "83485963700bcf11d5bf78118facb301676b69d918fee2e45a95e7f1a2840f6c"
+    }
+  }
+}

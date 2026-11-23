@@ -1,0 +1,14 @@
+# Draftboard
+
+> A local-first vector design app for the browser.
+
+Draftboard is a privacy-first, browser-based vector design tool. Everything is
+stored locally in your browser — no account, no server, no uploads. Works fully offline.
+Draftboard is designed to be user-friendly and agent-friendly.
+
+## Key pages
+- [Home](https://www.draftboard.app/): The full vector design editor with an
+  infinite dot-grid canvas, tools (Select, Text, Image, Line, Shape, Icon, Pen),
+  layers, undo/redo, and export to SVG, PNG, WEBP, or direct clipboard copy.
+
+## Source

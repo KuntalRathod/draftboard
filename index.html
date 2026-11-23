@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Draftboard - free design.</title>
+        <meta
+            name="description"
+            content="Draftboard — a local-first vector design app for the browser. Draw shapes, text, images, lines, icons and freehand strokes, then export to SVG, PNG or WEBP."
+        />
+        <link rel="canonical" href="https://www.draftboard.app/" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Draftboard" />
+        <meta property="og:title" content="Draftboard - free design." />
+        <meta
+            property="og:description"
+            content="Draftboard — a local-first vector design app for the browser. Draw shapes, text, images, lines, icons and freehand strokes, then export to SVG, PNG or WEBP."
+        />
+        <meta property="og:url" content="https://www.draftboard.app/" />
+        <meta property="og:image" content="https://www.draftboard.app/social.png" />
+        <meta
+            property="og:image:alt"
+            content="Draftboard vector design app — infinite canvas with toolbar, layers, and properties panel"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://www.draftboard.app/#organization",
+                    "name": "Draftboard",
+                    "url": "https://www.draftboard.app/",
+                    "logo": "https://www.draftboard.app/favicon.svg"
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://www.draftboard.app/#website",
+                    "url": "https://www.draftboard.app/",
+                    "name": "Draftboard",
+                    "publisher": { "@id": "https://www.draftboard.app/#organization" }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://www.draftboard.app/#webpage",
+                    "url": "https://www.draftboard.app/",
+                    "name": "Draftboard - free design.",
+                    "description": "Draftboard — a local-first vector design app for the browser. Draw shapes, text, images, lines, icons and freehand strokes, then export to SVG, PNG or WEBP.",
+                    "isPartOf": { "@id": "https://www.draftboard.app/#website" }
+                },
+                {
+                    "@type": "SoftwareApplication",
+                    "@id": "https://www.draftboard.app/#software",
+                    "name": "Draftboard",
+                    "url": "https://www.draftboard.app/",
+                    "applicationCategory": "GraphicsApplication",
+                    "operatingSystem": "All",
+                    "applicationPlatform": "Web Browser",
+                    "publisher": { "@id": "https://www.draftboard.app/#organization" },
+                    "screenshot": "https://www.draftboard.app/social.png"
+                }
+            ]
+        }
+        </script>
+    </head>
+    <body>
+        <noscript>
+            <main
+                style="max-width: 48rem; margin: 2rem auto; padding: 0 1rem; font-family: system-ui, sans-serif; line-height: 1.6;"
+            >
+                <h1>Draftboard - free design.</h1>
+                <p>
+                    A local-first vector design app for the browser. Draw shapes, text, images,
+                    lines, icons and freehand strokes, then export to SVG, PNG or WEBP. Everything
+                    is stored locally in your browser via IndexedDB — no account, no server, no
+                    uploads.
+                </p>
+                <h2>Features</h2>
+                <ul>
+                    <li>Infinite canvas with adaptive dot grid, pan and zoom</li>
+                    <li>Tools: Select, Text, Image, Line, Shape, Icon, Pen</li>
+                    <li>Layers, undo/redo, and keyboard shortcuts</li>
+                    <li>Export to SVG, PNG, WEBP, or copy to clipboard</li>
+                    <li>Light and dark themes</li>
+                </ul>
+                <p><strong>JavaScript is required to use the editor.</strong></p>
+            </main>
+        </noscript>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

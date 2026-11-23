@@ -1,0 +1,46 @@
+import Dexie, { type Table } from "dexie";
+import type { AssetRecord, ProjectRecord } from "./types";
+
+export class DraftboardDB extends Dexie {
+    projects!: Table<ProjectRecord, string>;
+    assets!: Table<AssetRecord, string>;
+
+    constructor() {
+        super("draftboard");
+        this.version(1).stores({
+            projects: "id, updatedAt",
+            assets: "id, projectId",
+        });
+    }
+}
+
+export const db = new DraftboardDB();
+
+/** Persist the editable fields of an existing project; no-op if it was deleted. */
+export async function saveProjectSnapshot(
+    id: string,
+    snapshot: Pick<ProjectRecord, "name" | "elements" | "camera" | "artboard">,
+): Promise<void> {
+    const existing = await db.projects.get(id);
+    if (!existing) return;
+    await db.projects.update(id, { ...snapshot, updatedAt: Date.now() });
+}
+
+export async function createProject(
+    name: string,
+    project: ProjectRecord,
+): Promise<void> {
+    await db.projects.put(project);
+    if (name) await db.projects.update(project.id, { name });
+}
+
+export async function deleteProject(id: string): Promise<void> {
+    await db.transaction("rw", db.projects, db.assets, async () => {
+        await db.projects.delete(id);
+        await db.assets.where("projectId").equals(id).delete();
+    });
+}
+
+export async function putAsset(asset: AssetRecord): Promise<void> {
+    await db.assets.put(asset);
+}
