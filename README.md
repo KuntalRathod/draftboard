@@ -20,7 +20,7 @@ then export the result as SVG, PNG, WEBP or PDF, or copy a PNG to the clipboard.
 There is no account and nothing is uploaded. Projects are saved in your browser
 (IndexedDB) and reopen where you left off.
 
-🌐 **Live demo:** coming soon · 📦 **Source:** coming soon
+🌐 **Live demo:** coming soon · 📦 **Source:** [github.com/KuntalRathod/draftboard](https://github.com/KuntalRathod/draftboard)
 
 ## ✨ Features
 
